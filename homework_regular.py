@@ -58,9 +58,9 @@ def duplicates_combining():
                 if column[6] == '':
                     column[6] = contact[6]
 
-        for contact in contacts_list:
-            if contact not in contacts_list_updated:
-                contacts_list_updated.append(contact)
+    for contact in contacts_list:
+        if contact not in contacts_list_updated:
+            contacts_list_updated.append(contact)
     return contacts_list_updated
 
 
