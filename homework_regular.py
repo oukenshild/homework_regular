@@ -47,16 +47,9 @@ def duplicates_combining():
             new_last_name = contact[0]
             new_first_name = contact[1]
             if last_name == new_last_name and first_name == new_first_name:
-                if column[2] == '':
-                    column[2] = contact[2]
-                if column[3] == '':
-                    column[3] = contact[3]
-                if column[4] == '':
-                    column[4] = contact[4]
-                if column[5] == '':
-                    column[5] = contact[5]
-                if column[6] == '':
-                    column[6] = contact[6]
+                for item in range(2, 7):
+                    if contact[item] == '':
+                        contact[item] = column[item]
 
     for contact in contacts_list:
         if contact not in contacts_list_updated:
