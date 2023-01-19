@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
 # TODO 2: сохраните получившиеся данные в другой файл
 # код для записи файла в формате CSV
-with open("C:\\Users\\Данил Илюхин\\PycharmProjects\\Homework_regular\\phonebook.csv", "w") as out_file:
+with open("C:\\Users\\Данил Илюхин\\PycharmProjects\\Homework_regular\\phonebook_raw.csv", "w") as out_file:
     datawriter = csv.writer(out_file, delimiter=',')
     datawriter.writerows(contacts_list_updated)
 pprint(contacts_list_updated)
